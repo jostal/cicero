@@ -1,0 +1,30 @@
+@use '../../styles';
+
+.navbar {
+  padding: 0.5em;
+  margin-top: 0.5em;
+
+  ul {
+    display: flex;
+    list-style: none;
+    gap: 1.5em;
+
+    li {
+      a {
+        text-decoration: none;
+        color: inherit;
+        font-size: 1.1em
+      }
+
+      a:hover {
+        color: styles.$accent-color;
+        text-shadow: none;
+      }
+    }
+  }
+}
+
+hr {
+  width: calc(100% - 5em);
+  color: #d2d2d2;
+}
